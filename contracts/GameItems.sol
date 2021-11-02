@@ -4,11 +4,14 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 
-
 /*
+    basic breeding
+        Multiple fungible swords > Gods sword (non-fungible)
+        Multiple fungible shields > Gods shield (fungible)
 
+    players can get initial items by forging them (these are pre-minted for deployer)
+        pay in GOLD or SILVER it depends on item
 */
-
 contract GameItems is ERC1155 {
 
     uint256 public constant GOLD = 0; //fungible 
